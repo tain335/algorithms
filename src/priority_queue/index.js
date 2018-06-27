@@ -1,15 +1,4 @@
-
-// class Node {
-//     left;
-//     right;
-//     value;
-//     constructor(value) {
-//         this.value = value;
-//     }
-// }
-
 class PrioityQueue {
-    //root;
 
     constructor() {
         this.arr = [-1];
@@ -31,7 +20,7 @@ class PrioityQueue {
         }
         this.arr[newPos] = value;
     }
-    //[-1, 3, 8, 9, 12, 11]
+
     deleteMin() {
         if(this.arr.length < 2) return;
         let min = this.arr[1];
